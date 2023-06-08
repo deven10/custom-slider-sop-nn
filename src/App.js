@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import "./App.css";
-import "animate.css";
-
 import caretDown from "../src/svg/caretDown.svg";
 import downInvertedComma from "../src/svg/down-inverted-comma.svg";
 import upInvertedComma from "../src/svg/up-inverted-comma.svg";
+
+import "./App.css";
+import "animate.css";
 
 function App() {
   const data = [
