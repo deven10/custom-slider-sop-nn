@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'breadley_sansregular';
+*/
+
+@font-face {
+  font-family: 'breadley_sansregular';
+  src: url('../src/fonts/breadleysans-regular-webfont.woff2') format('woff2'),
+       url('../src//fonts/breadleysans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -11,6 +26,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .main-content{
@@ -18,6 +34,21 @@ body{
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.main-content h2{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 44px;
+  word-spacing: 10px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-family: 'breadley_sansregular';
+}
+
+.slider-wrapper{
+  width: 85%;
 }
 
 .testimonials-wrapper{
@@ -28,6 +59,7 @@ body{
 
 .slider-testimonials{
   display: flex;
+  position: relative;
   gap: 15px;
 }
 
@@ -36,6 +68,7 @@ body{
   flex-direction: column;
   gap: 5px;
   justify-content: center;
+  color: #fff;
 }
 
 .testimonial-content p{
@@ -48,16 +81,63 @@ body{
   cursor: pointer;
 }
 
-
 .slider-line{
   width: 100%;
-  background-color: blue;
   margin-bottom: 50px;
   position: relative;
+  border-bottom: 5px solid #102E4A;
 }
 
 .slider-svg{
-  background-color: yellow;
   position: absolute;
-  /* left: 90%; */
+  left: 40%;
+}
+
+.user-info-wrapper{
+  display: flex;
+}
+
+.down-inverted-comma, .up-inverted-comma{
+  opacity: .5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.up-inverted-comma{
+  align-items: start;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.down-inverted-comma{
+  align-items: end;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.user-info{
+  height: 150px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: .3px;
+  font-weight: 400;
+  color: #fff;
+  word-spacing: 5px;
+  width: 60%;
+  margin: 15px auto;
+}
+
+.username{
+  font-weight: 700;
+  letter-spacing: .6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.user-about{
+  font-weight: 400;
+  letter-spacing: .3px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
