@@ -91,6 +91,7 @@ body{
 .slider-svg{
   position: absolute;
   left: 40%;
+  transition: .5s ease;
 }
 
 .user-info-wrapper{
