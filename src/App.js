@@ -54,7 +54,7 @@ function App() {
   const [testimonials, setTestimonials] = useState(data);
   const [value, setValue] = useState(38.5);
 
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
   const [selectedUser, setSelectedUser] = useState({
     name: "Priya Umrania",
@@ -79,15 +79,15 @@ function App() {
     if (idx === 4) setValue(70);
   };
 
-  useEffect(() => {
-    setToggle((prev) => !prev);
-  }, [selectedUser]);
+  // useEffect(() => {
+  //   setToggle((prev) => !prev);
+  // }, [selectedUser]);
 
   return (
     <div className="App">
       <div className="main-wrapper">
         <div className="main-content">
-          <h2>Check Out What Our Clients Say!</h2>
+          <h2>Check What Our Clients Say!</h2>
           <div className="slider-wrapper">
             <div className="user-info-wrapper">
               <div className="up-inverted-comma">
