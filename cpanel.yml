@@ -1,5 +1,5 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/neelneel/public_html/
+ - export DEPLOYPATH=/home/neelneel/repositories/custom-slider-sop-nn/
  - /bin/cp * $DEPLOYPATH
